@@ -8,8 +8,11 @@
     {
       "root": "src",
        "outDir": "../aws-mpf-compare-hero/src/main/resources/public",
-      "assets": [
-        "assets",
+     "assets": [
+        "css",
+        "img",
+        "js",
+        "vendor",        
         "favicon.ico"
       ],
       "index": "index.html",
