@@ -1,0 +1,30 @@
+<div class="container">
+	<h3>Major 5 MPF fund types</h3>
+	<p> Data Source from 
+		<a target="_blank" href="http://minisite.mpfa.org.hk/mpfie/en/jjfive/detailed-profile.html">MPFA - MPF Investment Education </a>
+	</p>
+<div class="table-responsive">
+	<table class="table">
+		<thead>
+		<tr>
+		<th>Fund Type</th>
+		<th>Investment Objectives</th>
+		<th>Investment Instruments</th>
+		<th>Major Risk</th>
+		<th>Feature</th>
+		</tr>		
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of mpfDetails">
+				<td>{{item.fundType}}</td>				
+				<td>{{item.investObjective}}</td>
+				<td>{{item.investInstruments}}</td>
+				<td [innerHtml]="item.majorRisk | nl2brPipe"></td>
+				<td [innerHtml]="item.feature | nl2brPipe"></td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
+	
+</div>
